@@ -38,7 +38,7 @@ const prices = [10, 60, 10];
 const shippingCost = 50;
 let utenteCheEffettuaLAcquisto = marco; //cambia il valore qui per provare se il tuo algoritmo funziona!
 
-//1 definisco il prezzo totale, scontato
+//1 definisco il prezzo totale, scontato, finale e calcolo il totale del carrello
 let prezzoCarrello = 0;
 let prezzoScontato = 0;
 let prezzoFinale = 0;
