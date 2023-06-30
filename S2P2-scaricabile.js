@@ -82,7 +82,7 @@ for (let i = 0; i < utenti.length; i++) {
 let arrayAmbassador = [];
 
 for (let i = 0; i < utenti.length; i++) {
-  if (utenti[i].isAmbassador == true) {
+  if (utenti[i].isAmbassador) {
     arrayAmbassador.push(utenti[i]);
   }
 }
