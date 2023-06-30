@@ -85,4 +85,4 @@ for (let i = 0; i < utenti.length; i++) {
   }
 }
 
-console.log(`Ambassadors:` + JSON.stringify(arrayAmbassador));
+console.log("Ambassadors :", arrayAmbassador);
