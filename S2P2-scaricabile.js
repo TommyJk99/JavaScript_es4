@@ -64,9 +64,7 @@ console.log(
 //creo un array vuoto e lo riempio utilizzando push
 const utenti = [];
 
-utenti.push(marco);
-utenti.push(paul);
-utenti.push(amy);
+utenti.push(marco, paul, amy);
 
 //stampo informazioni contenute all'interno del vettore
 let ambassador;
