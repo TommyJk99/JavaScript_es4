@@ -34,7 +34,7 @@ const amy = {
   isAmbassador: false,
 };
 
-const prices = [10, 60, 10];
+const prices = [30, 60, 10];
 const shippingCost = 50;
 let utenteCheEffettuaLAcquisto = marco; //cambia il valore qui per provare se il tuo algoritmo funziona!
 
@@ -44,7 +44,7 @@ let prezzoScontato = 0;
 let prezzoFinale = 0;
 
 for (let i = 0; i < prices.length; i++) {
-  prezzoCarrello = prezzoCarrello + prices[i];
+  prezzoCarrello += prices[i];
 }
 
 //2 applicazione sconto ambassador
@@ -77,3 +77,14 @@ for (let i = 0; i < utenti.length; i++) {
     : (ambassador = "non è un ambassador");
   console.log(`${utenti[i].name} ${utenti[i].lastName} ${ambassador} `);
 }
+
+//vettore con con soli ambassador
+let arrayAmbassador = [];
+
+for (let i = 0; i < utenti.length; i++) {
+  if (utenti[i].isAmbassador == true) {
+    arrayAmbassador.push(utenti[i]);
+  }
+}
+
+console.log(`Ambassadors:` + JSON.stringify(arrayAmbassador));
